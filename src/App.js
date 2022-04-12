@@ -19,8 +19,9 @@ function App() {
   return (
     <>
     <Router >
+    <Navbar title='TextUtils' about='About' mode={mode} toggleMode={toggleMode}/>
   <div className="container">
-  <Navbar title='TextUtils' about='About' mode={mode} toggleMode={toggleMode}/>
+ 
 
   <Routes>
       <Route path="/" caseSensitive={false} element={<TextForm heading ='Enter your text below'/>} />
